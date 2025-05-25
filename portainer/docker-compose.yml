@@ -15,10 +15,13 @@ services:
 
 volumes:
   portainer_data:
+    name: portainer_data
 
 networks:
   common-bridge:
     driver: bridge
+    name: common-bridge
+    external: true
 
 
 
